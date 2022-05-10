@@ -13,6 +13,7 @@
 * Los modelos de dominio son no anémicos, incluyendo validaciones y namings constructor, para no permitir que se instancie el modelo a no ser que sea a través de los métodos definidos, asegurando solidez de éste.
 * Se ha usado el patrón adapter para trabajar con JPARepository, para no acoplarnos a la solución de JPA, y permitir trabajar con la interfaz del repositorio, abriendo posibilidades a otras implementaciones futuras, cumpliendo principio open-closed.
 * Tenemos validaciones a nivel de modelo de dominio, del DTO, y lógicas dentro de las implementaciones del repositorio.
+* Para la capa de Renting, tenemos unit tests con MockitoBDD y test de integración con MockMvc. Hemos usado MockitoBDD ya que el business language que incorpora permite mayor legibilidad y mantenimiento de los tests.
 * Se ha añadido un controller manejador de excepciones genéricos, se podría personalizar por excepciones y mostrar un http status u otro dependiendo del tipo de excepción recibida.
 * Se ha añadido también securización con Basic Auth para las peticiones.
 * Para los bonus de los clientes, la inserción se hace a través de eventos con un publisher y un listener, considerando que este proceso no tendría por qué ser síncrono y maximizar recursos en el proceso de entrega de films.
