@@ -15,7 +15,7 @@
 * Tenemos validaciones a nivel de modelo de dominio, del DTO, y lógicas dentro de las implementaciones del repositorio.
 * Se ha añadido un controller manejador de excepciones genéricos, se podría personalizar por excepciones y mostrar un http status u otro dependiendo del tipo de excepción recibida.
 * Se ha añadido también securización con Basic Auth para las peticiones.
-* Para los bonus de los clientes, la inserción se hace a través de eventos con un publisher y un listener, considerando que este proceso no tendría por qué ser síncrono y maximizar recursos en el proceso de entre de films.
+* Para los bonus de los clientes, la inserción se hace a través de eventos con un publisher y un listener, considerando que este proceso no tendría por qué ser síncrono y maximizar recursos en el proceso de entrega de films.
 * Trabajamos con swagger, la última versión de OpenApi. Hacemos uso de anotaciones en las Apis.
 * Hay unos pequeños ejemplos de SLF4J de lombok en los servicios Rest.
 
